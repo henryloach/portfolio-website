@@ -9,7 +9,7 @@
     },
     {
         "name": "NC-News",
-        "description": "NC-News is a full-stack CRUD application combining the two projects ending the backend and frontend phases of the Northcoders bootcamp.\nThe backend uses an express server accessing a postgres database to serve REST API endpoints. Supertest in conjunction with husky pre-commit hooks were used in development to ensure things were working as intended.\n The frontend features a React single-page application which makes use of these endpoints to present a mock of an interactive news article application.",
+        "description": "NC-News is a full-stack CRUD application combining the two projects ending the backend and frontend phases of the Northcoders bootcamp.\nThe backend uses an express server accessing a postgres database to serve REST API endpoints. Supertest in conjunction with husky pre-commit hooks were used in development to ensure things were working as intended.\n The frontend features a React single-page application which makes use of these endpoints to present a mock of an interactive news article website.",
         "technologies": ["html", "css", "javascript", "nodejs", "express", "postgres"],
         "link": "https://chris-loach-nc-news.netlify.app",
         "gitHub": "https://github.com/henryloach/fe-nc-news",
