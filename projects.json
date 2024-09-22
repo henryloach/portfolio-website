@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Northchess",
+        "description": "Northchess is a full-stack chess variants application created in collaboration with fellow students as the final project of the Northcoders bootcamp.\nThe app is written using the multi-platform Flutter framework built on the Dart programming language.\nWe used WebSockets to facilitate real-time relaying of information between clients via the server, allowing multiple games to be played simultaneously.\nThe technologies used and app itself were quite different from the React CRUD applications the bootcamp focussed on, presenting an interesting challenge.",
+        "technologies": ["flutter", "dart"],
+        "link": "https://northchess.netlify.app",
+        "gitHub": "https://github.com/henryloach/nc_abcs_boardgame_frontend",
+        "image": "./resources/projectPreviews/northchess.png"
+    },
+    {
+        "name": "NC-News",
+        "description": "NC-News is a full-stack CRUD application combining the two projects ending the backend and frontend phases of the Northcoders bootcamp.\nThe backend uses an express server accessing a postgres database to serve REST API endpoints. Supertest in conjunction with husky pre-commit hooks were used in development to ensure things were working as intended.\n The frontend features a React single-page application which makes use of these endpoints to present a mock of an interactive news article application.",
+        "technologies": ["html", "css", "javascript", "nodejs", "express", "postgres"],
+        "link": "https://chris-loach-nc-news.netlify.app",
+        "gitHub": "https://github.com/henryloach/fe-nc-news",
+        "image": "./resources/projectPreviews/nc-news.png"
+    }
+]

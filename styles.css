@@ -1,119 +1,137 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
+body {
+    text-align: center;
+    background: #eeeeee;
+    line-height: 1.6;
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
 }
 
-main {
-    margin-left: 20rem;
-    margin-right: 20rem;
+p {
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 h1 {
-    text-align: center;
+    margin-top: 5ch;
+}
+
+h1 + h2 {
+    color: #9e9e9e;
     text-decoration: underline;
 }
 
-header img {
-    width: 100%;
-    height: 8rem;
+h2, h4 {
+    color: #9e9e9e
+}
+
+#profile-pic {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    object-position: 50% 37%;
-    box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.25);
+    object-position: 70%;
+    margin-bottom: 2ch;
 }
 
-/*  */
-
-.projects * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+section {
+    margin-bottom: 50px;
+    &::before {
+        content: "";
+        background: #d3d3d3;
+        display: block;
+        height: 3px;
+        width: 100%;
+    }
 }
 
-.projects a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.projects ul {
-    list-style-type: none;
-}
-    
-.projects li {   
-    --border-radius: 12px;
-    display: grid;
-    grid-template-columns: 75% 12.5% 12.5%;
-    grid-template-rows: 50% 50%;
-
-    margin: 30px 0 30px 0;
-    
-    border-radius: var(--border-radius);
-
-    box-shadow: 8px 8px 12px -6px rgba(0,0,0,0.25);
-}
-
-.project-name {
-    grid-column: 1;
-    grid-row: 1;
-
+.about-container {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    gap: 6ch;
 
-    padding: 15px;
+    div {
+        background: #fef7ff;
+        width: 30ch;
+        padding: 3ch;
+        box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 25%);
+    }
 
-    font-size: xx-large;
+    li {
+        position: relative;
+        padding-bottom: 1ch;
+    }
 
-    background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
-    border-top-left-radius: var(--border-radius);
+    li::after {
+        content: '•'; /* The bullet point character (•) */
+        position: absolute;
+        bottom: 0;
+        left: 50%; /* Centers the dot */
+        transform: translate(-50%, 40%);
+        color: #d3d3d3; /* You can change the color of the dots if needed */
+    }
+    
+    /* Remove dot after the last item */
+    li:last-child::after {
+        display: none;
+    }
 }
+
+.contact {
+    img {
+        width: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.project {
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    &::after {
+        content: "";
+        background: #d3d3d3;
+        display: block;
+        height: 1px;
+        width: 100%;
+    }
+}
+
+.project-preview {
+    width: 400px;
+    box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 25%);
+}
+
 
 .technologies-used {
-    grid-column: 2;
-    grid-row: 1;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-
-    padding: 10px;
-
-
-    background-color:hsla(58, 100%, 68%, 1)
+    margin-bottom: 20px;
 }
 
-.github-link {
+.tech-icons {
     display: flex;
-    align-items: center;
+    gap: 10px;
     justify-content: center;
 
-    grid-column: 3;
-    grid-row: 1;
-
-    background-color: hsl(197, 32%, 76%);
-    border-top-right-radius: var(--border-radius);
+    img {
+        width: 50px;
+    }
 }
 
-.github-link div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.github-link img {
-    max-width: 90%;
-    max-height: 90%;
-}
-
-.project-description {
-    grid-column: 1 / 4;
-    grid-row: 2;
-
-    padding: 15px;
-
-    font-size: larger;
-
-    background-color: #f6f6f6;
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
+.project-link-icon {
+    width: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
