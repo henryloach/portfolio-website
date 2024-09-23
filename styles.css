@@ -1,9 +1,42 @@
+ /* Regular */
+ @font-face {
+    font-family: 'PT Astra Serif';
+    src: url('fonts/PT Astra Serif_Regular/PT Astra Serif_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'PT Astra Serif';
+    src: url('fonts/PT Astra Serif_Bold/PT Astra Serif_Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: 'PT Astra Serif';
+    src: url('fonts/PT Astra Serif_Italic/PT Astra Serif_Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'PT Astra Serif';
+    src: url('fonts/PT Astra Serif_Bold Italic/PT Astra Serif_Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
 body {
     text-align: center;
     background: #eeeeee;
     line-height: 1.6;
     font-size: 17px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'PT Astra Serif', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 
 }
 
